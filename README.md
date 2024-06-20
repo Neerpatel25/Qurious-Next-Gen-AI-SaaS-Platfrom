@@ -1,6 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Qurious: A Full Stack SaaS Platform for Creative Content Creation
+
+Welcome to Qurious, a groundbreaking Full Stack Software as a Service (SaaS) platform designed to redefine the landscape of creative content creation. This project leverages state-of-the-art technologies and AI tools to provide an integrated and seamless experience for users across various domains such as content creation, education, multimedia production, and digital marketing.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Subscription and Billing](#subscription-and-billing)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+Qurious is a visionary platform that integrates cutting-edge Artificial Intelligence (AI) tools for generating text, code, video, music, and images. It addresses the challenges of accessing diverse creative tools across fragmented workflows, offering users a seamless and efficient solution for content creation.
+
+## Features
+
+- **AI-Driven Content Generation**: Utilize advanced AI models for natural language understanding and few-shot learning, inspired by pivotal works like "BERT" and "Language Models are Few-Shot Learners."
+- **Integrated Toolset**: Access a comprehensive suite of tools for generating text, code, video, music, and images in one place.
+- **Next.js 13 App Router**: Efficient client-side routing for optimized user navigation.
+- **Stripe Subscription System**: Streamlined billing processes for a frictionless subscriber experience.
+- **User-Friendly Interface**: Built with React and Tailwind for a modern and responsive user interface.
+- **Secure and Scalable Backend**: Leveraging Prisma, MySQL, and Clerk for robust data management and authentication.
+
+## Technologies Used
+
+- **Frontend**: Next.js 13, React, Tailwind CSS
+- **Backend**: Prisma, MySQL
+- **Authentication**: Clerk
+- **Payment Processing**: Stripe
+- **Font Optimization**: next/font for automatic optimization and loading of Inter, a custom Google Font
 
 ## Getting Started
+
+This is a Next.js project bootstrapped with `create-next-app`.
 
 First, run the development server:
 
@@ -18,19 +55,82 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+Follow these steps to set up the Qurious platform on your local machine:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Neerpatel25/qurious.git
+    cd qurious
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Set up environment variables**:
+    Create a `.env` file in the root directory and add the necessary environment variables:
+    ```env
+    DATABASE_URL=your-database-url
+    STRIPE_SECRET_KEY=your-stripe-secret-key
+    CLERK_API_KEY=your-clerk-api-key
+    ```
 
-## Deploy on Vercel
+4. **Run database migrations**:
+    ```bash
+    npx prisma migrate dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+Once the development server is running, you can access the platform at [http://localhost:3000](http://localhost:3000). From here, you can explore the various AI tools for content creation, manage your subscription, and enjoy a seamless creative experience.
+
+## Subscription and Billing
+
+Qurious uses Stripe to manage subscriptions and billing. To subscribe, follow these steps:
+
+1. Navigate to the subscription page.
+2. Choose a subscription plan that fits your needs.
+3. Enter your payment details via the secure Stripe checkout.
+
+Your subscription will be activated immediately, granting you access to the full suite of Qurious tools and features.
+
+## Contributing
+
+We welcome contributions to the Qurious project! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m "Add your commit message"
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact us at [support@qurious.com](mailto:support@qurious.com).
+
+Thank you for using Qurious! We hope it transforms your creative process and unlocks new dimensions of imagination.
+
+---
+
+*This README was generated to provide a comprehensive overview of the Qurious project. For more details, please refer to the documentation or contact our support team.*
