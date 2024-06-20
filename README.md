@@ -120,17 +120,3 @@ We welcome contributions to the Qurious project! To contribute, please follow th
     git push origin feature/your-feature-name
     ```
 5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or inquiries, please contact us at [support@qurious.com](mailto:support@qurious.com).
-
-Thank you for using Qurious! We hope it transforms your creative process and unlocks new dimensions of imagination.
-
----
-
-*This README was generated to provide a comprehensive overview of the Qurious project. For more details, please refer to the documentation or contact our support team.*
